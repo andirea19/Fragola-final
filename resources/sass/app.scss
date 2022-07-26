@@ -1,0 +1,99 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+/* https://bootstrapcolors.com */
+.btn-outline-fragola {
+    color: #990033;
+    border-color: #990033; }
+    .btn-outline-fragola:hover {
+      color: #fff;
+      background-color: #990033;
+      border-color: #990033; }
+    .btn-check:focus + .btn-outline-fragola, .btn-outline-fragola:focus {
+      box-shadow: 0 0 0 0.25rem rgba(153, 0, 51, 0.5); }
+    .btn-check:checked + .btn-outline-fragola, .btn-check:active + .btn-outline-fragola, .btn-outline-fragola:active, .btn-outline-fragola.active, .btn-outline-fragola.dropdown-toggle.show {
+      color: #fff;
+      background-color: #990033;
+      border-color: #990033; }
+      .btn-check:checked + .btn-outline-fragola:focus, .btn-check:active + .btn-outline-fragola:focus, .btn-outline-fragola:active:focus, .btn-outline-fragola.active:focus, .btn-outline-fragola.dropdown-toggle.show:focus {
+        box-shadow: 0 0 0 0.25rem rgba(153, 0, 51, 0.5); }
+    .btn-outline-fragola:disabled, .btn-outline-fragola.disabled {
+      color: #990033;
+      background-color: transparent; }
+  
+  .table-fragola {
+    --bs-table-bg: #990033;
+    --bs-table-striped-bg: #9e0d3d;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #a31a47;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #a11342;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #a31a47; }
+  
+  .alert-fragola {
+    color: #5c001f;
+    background-color: #ebccd6;
+    border-color: #e0b3c2; }
+    .alert-fragola .alert-link {
+      color: #4a0019; }
+  
+  .bg-fragola {
+    background-color: #990033 !important; }
+  
+  .text-fragola {
+    color: #990033 !important; }
+  
+  .border-fragola {
+    border-color: #990033 !important; }
+  
+  .link-fragola {
+    color: #990033; }
+    .link-fragola:hover, .link-fragola:focus {
+      color: #7a0029; }
+  
+  .list-group-item-fragola {
+    color: #5c001f;
+    background-color: #ebccd6; }
+    .list-group-item-fragola.list-group-item-action:hover, .list-group-item-fragola.list-group-item-action:focus {
+      color: #5c001f;
+      background-color: #d4b8c1; }
+    .list-group-item-fragola.list-group-item-action.active {
+      color: #fff;
+      background-color: #5c001f;
+      border-color: #5c001f; }
+  
+  /*# sourceMappingURL=style-2022-07-26-22-14-57-769.css.map */
+  .btn-fragola {
+    color: #ffffff;
+    background-color: #990033;
+    border-color: #990033; }
+    .btn-fragola:hover {
+      color: #ffffff;
+      background-color: #82002b;
+      border-color: #7a0029; }
+    .btn-check:focus + .btn-fragola, .btn-fragola:focus {
+      color: #ffffff;
+      background-color: #82002b;
+      border-color: #7a0029;
+      box-shadow: 0 0 0 0.25rem rgba(168, 38, 82, 0.5); }
+    .btn-check:checked + .btn-fragola, .btn-check:active + .btn-fragola, .btn-fragola:active, .btn-fragola.active, .show > .btn-fragola.dropdown-toggle {
+      color: #ffffff;
+      background-color: #7a0029;
+      border-color: #730026; }
+      .btn-check:checked + .btn-fragola:focus, .btn-check:active + .btn-fragola:focus, .btn-fragola:active:focus, .btn-fragola.active:focus, .show > .btn-fragola.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.25rem rgba(168, 38, 82, 0.5); }
+    .btn-fragola:disabled, .btn-fragola.disabled {
+      color: #ffffff;
+      background-color: #990033;
+      border-color: #990033; }
+  
+  /*# sourceMappingURL=style-2022-07-26-22-14-57-769_button.css.map */
+  
