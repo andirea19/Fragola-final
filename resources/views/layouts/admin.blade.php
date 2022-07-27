@@ -12,7 +12,7 @@
      <!-- CSRF Token -->
      <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Admin Page</title>
+    <title>Admin-Ansicht</title>
 
     <!-- Custom fonts for this template-->
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -27,7 +27,10 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('backend/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-</head>
+    <!-- Custom Favicon -->
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}">
+
+    </head>
 
 <body id="page-top">
 
@@ -102,7 +105,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Sb-Admin</span>
+                        <span>Infos zu Copyright &copy; und so weiter</span>
                     </div>
                 </div>
             </footer>
