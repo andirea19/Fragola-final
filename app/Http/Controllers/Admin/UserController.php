@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\Request;
 use App\Http\Requests\Admin\StoreUserRequest;
 use App\Http\Requests\Admin\UpdateUserRequest;
 
+/* what does my UserController to?
+ * - create a new user
+ * - edit an existing user
+ * - delete an existing user
+ * - list users
+ */
+
 /**
  * Übersicht aller BenutzerInnen.
  *

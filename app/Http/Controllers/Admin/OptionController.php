@@ -10,6 +10,13 @@ use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\Admin\OptionRequest;
 use App\Models\Question;
 
+/* what does my Option Controller to?
+ * - create a new option
+ * - edit an existing option
+ * - delete an existing option
+ * - list options
+ */
+
 class OptionController extends Controller
 {
    

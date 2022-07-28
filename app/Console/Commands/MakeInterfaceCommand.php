@@ -6,23 +6,18 @@ use Illuminate\Console\Command;
 
 class MakeInterfaceCommand extends Command
 {
-    /**
-     * The name and signature of the console command.
+    /** Namen des <Cron-Jobs></Cron-Jobs>
      *
      * @var string
      */
     protected $signature = 'command:name';
 
-    /**
-     * The console command description.
-     *
+    /** Beschreibung des <Cron-Jobs></Cron-Jobs>
      * @var string
      */
     protected $description = 'Command description';
 
     /**
-     * Create a new command instance.
-     *
      * @return void
      */
     public function __construct()
@@ -31,8 +26,6 @@ class MakeInterfaceCommand extends Command
     }
 
     /**
-     * Execute the console command.
-     *
      * @return int
      */
     public function handle()

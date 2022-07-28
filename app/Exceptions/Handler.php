@@ -8,16 +8,15 @@ use Throwable;
 class Handler extends ExceptionHandler
 {
     /**
-     * Kein Reporting für Exceptions
+     * Kein Reporting für Exceptions wenn -
      *
      * @var array<int, class-string<Throwable>>
      */
     protected $dontReport = [
-        //
+        //nie
     ];
 
-    /**
-     * Input, der nicht zu einer Exception geführt hat.
+    /** Flash-Messages für Exceptions/Input, der nicht zu einer Exception geführt hat.
      *
      * @var array<int, string>
      */
@@ -28,7 +27,7 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * Register
+     * Register Callback
      *
      * @return void
      */

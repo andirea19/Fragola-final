@@ -5,6 +5,8 @@ namespace App\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
+//WHY schdule? https://laravel.com/docs/5.7/scheduling#scheduling-a-command-via-artisan-console
+
 class Kernel extends ConsoleKernel
 {
     /**
@@ -18,9 +20,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
     }
 
-    /**
-     * Register the commands for the application.
-     *
+    /** Register     *
      * @return void
      */
     protected function commands()
