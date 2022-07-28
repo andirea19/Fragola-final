@@ -19,8 +19,13 @@ Route::get('/', function () {
     return redirect()->route('client.test');
 });
 
-/*Route::get('/dsgvo', function () {
-    return view('dsgvo.test');
+/*Route::get('dsvo', function () {
+    return view('dsgvo', [
+        'dsgvo'  => ' <h2>Information zur Daten­ver­arbeitung </h2>
+                        Gemäß Artikel 13 und 14 der Datenschutzgrundverordnung (DSGVO)
+                        Datenschutz ist Vertrauenssache und Ihr Vertrauen ist uns wichtig. Es ist uns daher ein Anliegen, transparent zu arbeiten und dabei Ihre berechtigten Interessen auf Geheimhaltung Ihrer personenbezogenen Daten (kurz: „Daten“) zu schützen.
+                        Deshalb informieren wir Sie mit dieser Datenschutzerklärung, wie wir mit Ihren Daten umgehen.'
+);
 });
 */
 

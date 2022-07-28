@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 
+// Category Seed - Erstellt eine neue Kategorie-Datenbank
+
 class DatabaseSeeder extends Seeder
 {
     /**

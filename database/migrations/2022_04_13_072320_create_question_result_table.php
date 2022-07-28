@@ -11,6 +11,8 @@ class CreateQuestionResultTable extends Migration
 {
     /**
      * Run the migrations.
+     * 
+     * why not use the create table method?
      *
      * @return void
      */

@@ -30,3 +30,5 @@ class QuestionSeed extends Seeder
         }
     }
 }
+
+//$question->delete();

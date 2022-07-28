@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+//Categories unterteilen die Fragen in Kategorien
+
 class CreateCategoriesTable extends Migration
 {
     /**
