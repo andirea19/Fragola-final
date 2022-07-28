@@ -19,6 +19,11 @@ Route::get('/', function () {
     return redirect()->route('client.test');
 });
 
+/*Route::get('/dsgvo', function () {
+    return view('dsgvo.test');
+});
+*/
+
 Route::group(['middleware' => 'auth'], function() {
    
     Route::get('test',[\App\Http\Controllers\TestController::class, 'index'])->name('client.test');
@@ -56,6 +61,3 @@ Route::group(['middleware' => 'auth'], function() {
 
 Auth::routes();
 
-Route::get('/dsgvo', function () {
-    return view('dsgvo');
-});

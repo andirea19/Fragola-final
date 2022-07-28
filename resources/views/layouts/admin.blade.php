@@ -102,8 +102,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Infos zu 
-                        <a href="{{ route('dsgvo') }}">DSGVO</a>                
+                        <span>Infos zu DSGVO             
                         &copy; und so weiter</span>
                     </div>
                 </div>
