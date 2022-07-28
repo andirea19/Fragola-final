@@ -6,6 +6,11 @@ use Faker\Factory;
 use App\Models\Question;
 use Illuminate\Database\Seeder;
 
+// Option Seed
+// - create a new Option
+// - edit a existing option
+// - delete an existing option
+
 class OptionSeed extends Seeder
 {
     /**

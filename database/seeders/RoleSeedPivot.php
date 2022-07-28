@@ -8,7 +8,6 @@ use Illuminate\Database\Seeder;
 class RoleSeedPivot extends Seeder
 {
     /**
-     * Run the database seeds.
      *
      * @return void
      */

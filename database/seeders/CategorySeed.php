@@ -8,9 +8,14 @@ use Illuminate\Database\Seeder;
 
 class CategorySeed extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
+    /** Category Seed
+     * - Erstellt eine neue Kategorie
+     * - Bearbeitet eine vorhandene Kategorie
+     * 
+     * @return void
+     */
+
+    *
      * @return void
      */
     public function run()

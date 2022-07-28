@@ -7,7 +7,10 @@ use Illuminate\Database\Seeder;
 
 class RoleSeed extends Seeder
 {
-    /**
+    /** Role Seed macht
+     * - Erstellt eine neue Rolle
+     * - Bearbeitet eine vorhandene Rolle
+     * 
      * Run the database seeds.
      *
      * @return void

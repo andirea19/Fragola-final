@@ -8,8 +8,9 @@ use Illuminate\Database\Seeder;
 
 class QuestionSeed extends Seeder
 {
-    /**
-     * Run the database seeds.
+    /** Question Seed macht
+     * - Erstellt eine neue Frage
+     * - Bearbeitet eine vorhandene Frage
      *
      * @return void
      */
