@@ -20,3 +20,6 @@ class Result extends Model
         return $this->belongsToMany(Question::class)->withPivot(['option_id', 'points']);
     }
 }
+
+//wie ziehe ich die Daten in einen Highscore?
+

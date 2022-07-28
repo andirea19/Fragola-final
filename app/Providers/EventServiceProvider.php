@@ -30,3 +30,6 @@ class EventServiceProvider extends ServiceProvider
         //
     }
 }
+
+/* Compare this snippet from app\Providers\BroadcastServiceProvider.php:
+inwiefern kein Event? */

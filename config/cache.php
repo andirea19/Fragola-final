@@ -90,6 +90,7 @@ return [
 
         'octane' => [
             'driver' => 'octane',
+//            'connection' => 'default',
         ],
 
     ],

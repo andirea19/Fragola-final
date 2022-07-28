@@ -1,4 +1,5 @@
-# Laravel 8 - Quiz App _Fragola_
+# Laravel - Quiz App _Fragola_
+Andrea Ungerer - noch unzufrieden damit
 
 ## Mindestanforderungen:
 Projektdokumentation  
@@ -47,16 +48,17 @@ Admin können User zu Admin machen.
 
 ### Bisheriger Zeitaufwand nach KW
 KW24: 12h
-KW25: 12h
+KW25: 17h
 KW26: 16h
 KW27: 24h
-KW28: 20h
+KW28: 26h
 KW29: 23h
-KW30: 13h
+KW30: 15h
 
 ## Noch offen
-Unit Tests (phpunit)
-Integration Tests (phpunit)
+Mailing Programm richtigstellen
+Doppeltes CSS entfernen
+Unit Tests (phpunit), Integration Tests (phpunit)
 Export im richtigen Format (JSON, XML, CSV)
 API für die Arbeit mit Moodle
 Anleitung für die Verwendung
@@ -65,6 +67,3 @@ Anleitung für die Verwendung
 
 -   email = admina@example.com
 -   password = 456
-
-
-

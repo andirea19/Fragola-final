@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+//Wie mache ich hier Prozent oÄ?
+
 class Option extends Model
 {
     use HasFactory;
