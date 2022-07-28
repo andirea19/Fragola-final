@@ -3,10 +3,6 @@
 @section('content')
 <div class="container-fluid">
 
-    <!-- Page Heading -->
-   
-
-    <!-- Content Row -->
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
@@ -17,7 +13,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New option') }}</span>
+                        <span class="text">{{ __('Neue Otion') }}</span>
                     </a>
                 </div>
             </div>
@@ -29,10 +25,11 @@
                                 <th width="10">
 
                                 </th>
-                                <th>No</th>
-                                <th>Question</th>
-                                <th>option Text</th>
-                                <th>Point</th>
+                                <th>Nummer</th>
+                                <th>Frage</th>
+                                <th>Option Text</th>
+                                <th>Punkte</th>
+                                <!-- was ist schöner als Action? -->
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -40,6 +37,8 @@
                             @forelse($options as $option)
                             <tr data-entry-id="{{ $option->id }}">
                                 <td>
+
+<!-- durch die optionen loopen, bis ich zu einer methode komme -->
 
                                 </td>
                                 <td>{{ $loop->iteration }}</td>
@@ -80,20 +79,20 @@
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
-  let deleteButtonTrans = 'delete selected'
+  let deleteButtonTrans = 'Ausgewählte löschen'
   let deleteButton = {
     text: deleteButtonTrans,
     url: "{{ route('admin.options.mass_destroy') }}",
     className: 'btn-danger',
     action: function (e, dt, node, config) {
       var ids = $.map(dt.rows({ selected: true }).nodes(), function (entry) {
-          return $(entry).data('entry-id')
+          return $(entry).data('Id')
       });
       if (ids.length === 0) {
-        alert('zero selected')
+        alert('Bitte wählen Sie mindestens eine Option aus')
         return
       }
-      if (confirm('are you sure ?')) {
+      if (confirm('Sind Sie sicher, dass Sie die ausgewählten Optionen löschen wollen?')) {
         $.ajax({
           headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
           method: 'POST',
@@ -103,6 +102,9 @@
       }
     }
   }
+
+// löschen wie in der Datenbank
+
   dtButtons.push(deleteButton)
   $.extend(true, $.fn.dataTable.defaults, {
     order: [[ 1, 'asc' ]],

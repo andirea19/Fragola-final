@@ -3,9 +3,6 @@
 @section('content')
 <div class="container-fluid">
 
-    <!-- Page Heading -->
-   
-
     <!-- Content Row -->
         <div class="card">
             <div class="card-header py-3 d-flex">
@@ -17,7 +14,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New category') }}</span>
+                        <span class="text">{{ __('Neue Kategorie') }}</span>
                     </a>
                 </div>
             </div>
@@ -72,11 +69,13 @@
 </div>
 @endsection
 
+<!-- Warum geht der Delete Button nicht? -->
+
 @push('script-alt')
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
-  let deleteButtonTrans = 'delete selected'
+  let deleteButtonTrans = 'Auswahl löschen'
   let deleteButton = {
     text: deleteButtonTrans,
     url: "{{ route('admin.categories.mass_destroy') }}",
@@ -86,10 +85,10 @@
           return $(entry).data('entry-id')
       });
       if (ids.length === 0) {
-        alert('zero selected')
+        alert('Keine Zeile ausgewählt!')
         return
       }
-      if (confirm('are you sure ?')) {
+      if (confirm('Wollen Sie wirklich löschen? ')) {
         $.ajax({
           headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
           method: 'POST',

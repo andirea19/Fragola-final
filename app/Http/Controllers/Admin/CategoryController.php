@@ -78,8 +78,11 @@ class CategoryController extends Controller
         ]);
     }
 
-/*  Entfernt zuviel aus der View
-    public function show(Category $category): View
+/*  Entfernt zuviel nicht ?
+
+Unterschied zu mass destroy? 
+
+public function show(Category $category): View
     {
         return view('admin.categories.show', compact('category'));
     }
