@@ -1,4 +1,4 @@
-# Laravel 8 - Quiz Application _Fragola_
+# Laravel 8 - Quiz App _Fragola_
 
 ## Mindestanforderungen:
 Projektdokumentation  
