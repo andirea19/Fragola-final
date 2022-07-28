@@ -56,3 +56,6 @@ Route::group(['middleware' => 'auth'], function() {
 
 Auth::routes();
 
+Route::get('/dsgvo', function () {
+    return view('dsgvo');
+});

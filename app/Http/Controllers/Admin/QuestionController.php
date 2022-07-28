@@ -9,6 +9,13 @@ use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\Admin\QuestionRequest;
 use App\Models\Category;
 
+/* what does Question Controller to?
+ * - create a new question
+ * - edit an existing question
+ * - delete an existing question
+ * - list questions
+ */
+
 class QuestionController extends Controller
 {
    

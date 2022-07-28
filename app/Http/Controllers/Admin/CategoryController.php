@@ -8,6 +8,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\Admin\CategoryRequest;
 
+/* what does Category Controller to?
+ * - create a new category
+ * - edit an existing category
+ * - delete an existing category
+ * - list categories
+ */
+
 class CategoryController extends Controller
 {
    
@@ -33,6 +40,12 @@ class CategoryController extends Controller
         ]);
     }
 
+/*    public function edit(Category $category): View
+    {
+        return view('admin.categories.edit', compact('category'));
+    }
+*/
+
     public function show(Category $category): View
     {
         return view('admin.categories.show', compact('category'));
@@ -42,6 +55,7 @@ class CategoryController extends Controller
     {
         return view('admin.categories.edit', compact('category'));
     }
+
 
     public function update(CategoryRequest $request, Category $category): RedirectResponse
     {
@@ -57,12 +71,29 @@ class CategoryController extends Controller
     {
         $category->delete();
 
+
         return back()->with([
             'message' => 'successfully deleted !',
             'alert-type' => 'danger'
         ]);
     }
 
+/*  Entfernt zuviel aus der View
+    public function show(Category $category): View
+    {
+        return view('admin.categories.show', compact('category'));
+    }
+    
+   public function destroyAll(): RedirectResponse
+    {
+        Category::truncate();
+
+        return back()->with([
+            'message' => 'successfully deleted all !',
+            'alert-type' => 'danger'
+        ]);
+    }
+*/
     public function massDestroy()
     {
         Category::whereIn('id', request('ids'))->delete();

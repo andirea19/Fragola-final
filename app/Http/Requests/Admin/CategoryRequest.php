@@ -6,8 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class CategoryRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
+    /** siehe Admin Validierung
      *
      * @return bool
      */
@@ -16,8 +15,7 @@ class CategoryRequest extends FormRequest
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
+    /** Request überprüfen
      *
      * @return array
      */
@@ -28,3 +26,6 @@ class CategoryRequest extends FormRequest
         ];
     }
 }
+
+//Für alle Kategorien oder nur für einige?
+//Verbindung zu app\Http\Controllers\Admin\CategoryController.php beim Editieren beachten!

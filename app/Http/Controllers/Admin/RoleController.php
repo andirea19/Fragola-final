@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Request;
 use App\Http\Requests\Admin\StoreRoleRequest;
 use App\Http\Requests\Admin\UpdateRoleRequest;
 
+/**
+ * Übersicht aller Rollen.
+ *
+ * @package App\Http\Controllers\Admin
+ */
+
 class RoleController extends Controller
 {
     /**
@@ -23,9 +29,7 @@ class RoleController extends Controller
         return view('admin.roles.index', compact('roles'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
+    /** Zeigt Tabelle an     *
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -36,7 +40,7 @@ class RoleController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Greift auf die Model-Methode zu, um eine neue Rolle zu erstellen.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response

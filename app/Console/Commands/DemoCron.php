@@ -9,22 +9,18 @@ namespace App\Console\Commands;
   class DemoCron extends Command
   {
       /**
-       * The name and signature of the console command.
-       *
+        *Namen des Cron-Jobs   
        * @var string
        */
       protected $signature = 'demo:cron';
     
-      /**
-       * The console command description.
+      /**Beschreibung des Cron-Jobs
        *
        * @var string
        */
       protected $description = 'Command description';
     
       /**
-       * Create a new command instance.
-       *
        * @return void
        */
       public function __construct()
@@ -33,8 +29,6 @@ namespace App\Console\Commands;
       }
     
       /**
-       * Execute the console command.
-       *
        * @return int
        */
       public function handle()

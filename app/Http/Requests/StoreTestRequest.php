@@ -4,11 +4,11 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+//Ist die Authorisierung gegeben? -> hat nix mit dem Unit Test zu tun
+
 class StoreTestRequest extends FormRequest
 {
     /**
-     * Determine if the user is authorized to make this request.
-     *
      * @return bool
      */
     public function authorize()
@@ -16,8 +16,7 @@ class StoreTestRequest extends FormRequest
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
+    /** Admin Validierung
      *
      * @return array
      */

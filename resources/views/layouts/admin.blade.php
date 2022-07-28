@@ -96,16 +96,15 @@
 
                 <!-- Begin Page Content -->
                 @yield('content')
-                <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Infos zu Copyright &copy; und so weiter</span>
+                        <span>Infos zu 
+                        <a href="{{ route('dsgvo') }}">DSGVO</a>                
+                        &copy; und so weiter</span>
                     </div>
                 </div>
             </footer>

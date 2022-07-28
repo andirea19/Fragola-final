@@ -11,3 +11,13 @@ class DashboardController extends Controller
         return view('admin.dashboard');
     }
 }
+
+/* überflüssig?
+
+class CategoryController extends Controller
+{
+    public function index(){
+        return view('admin.categories.index');
+    }
+}
+*/

@@ -9,6 +9,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\Admin\ResultRequest;
 
+/* what does Result Controller do?
+ * - create a new result
+ * - edit a existing result
+ * - delete an existing result
+ * - list results
+ */
+
 class ResultController extends Controller
 {
    
@@ -59,6 +66,8 @@ class ResultController extends Controller
             'alert-type' => 'info'
         ]);
     }
+
+//     destroy zerstört und leitet dann weiter zurück zur Liste der Results
 
     public function destroy(Result $result): RedirectResponse
     {

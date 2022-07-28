@@ -13,7 +13,7 @@ use App\Http\Requests\Admin\UpdatePermissionRequest;
 class PermissionController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Übersicht aller Berechtigungen.
      *
      * @return \Illuminate\Http\Response
      */
@@ -26,8 +26,7 @@ class PermissionController extends Controller
         return view('admin.permissions.index', compact('permissions'));
     }
 
-    /**
-     * Show the form for creating a new resource.
+    /** Reaktion auf eine Anfrage zur Erstellung einer neuen Berechtigung.
      *
      * @return \Illuminate\Http\Response
      */
@@ -39,8 +38,9 @@ class PermissionController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Speichert eine neue Berechtigung
      *
+     * 
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -57,7 +57,7 @@ class PermissionController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Formular zum Editieren
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -70,8 +70,8 @@ class PermissionController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
+     * Speichert die Änderungen einer Berechtigung
+     * 
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -89,7 +89,7 @@ class PermissionController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Entfernen von Ressourcen
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -106,8 +106,8 @@ class PermissionController extends Controller
         ]);
     }
 
-     /**
-     * Delete all selected Permission at once.
+     /** Notwengi, alles zu löschen?
+
      *
      * @param Request $request
      */
@@ -118,3 +118,16 @@ class PermissionController extends Controller
         return response()->noContent();
     }
 }
+
+/* überflüssig?
+class PermissionController extends Controller
+{
+    @return \Illuminate\Http\Response
+     
+    public function index()
+    {
+        $permissions = Permission::get();
+
+        return view('admin.permissions.index', compact('permissions'));
+    }
+} */

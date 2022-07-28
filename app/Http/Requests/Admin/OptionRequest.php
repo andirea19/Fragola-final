@@ -6,8 +6,8 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class OptionRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
+    /** siehe Admin Validierung
+     * vergleicht mit app\Http\Controllers\Admin\CategoryController.php
      *
      * @return bool
      */

@@ -9,10 +9,15 @@ use Illuminate\Support\Facades\Request;
 use App\Http\Requests\Admin\StoreUserRequest;
 use App\Http\Requests\Admin\UpdateUserRequest;
 
+/**
+ * Übersicht aller BenutzerInnen.
+ *
+ * @package App\Http\Controllers\Admin
+ */
+
 class UserController extends Controller
 {
     /**
-     * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -24,7 +29,7 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * New resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -36,8 +41,6 @@ class UserController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -53,7 +56,7 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Tabelle zum Editieren anzeigen
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -65,9 +68,8 @@ class UserController extends Controller
         return view('admin.users.edit', compact('user','roles'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
+    /** Update     *
+     * 
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -84,8 +86,6 @@ class UserController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -99,9 +99,8 @@ class UserController extends Controller
         ]);
     }
 
-     /**
-     * Delete all selected Permission at once.
-     *
+     /** Zugriffe entferen     *
+      * 
      * @param Request $request
      */
     public function massDestroy(Request $request)
