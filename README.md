@@ -20,27 +20,27 @@ Umsetzung einer Frontend und Backend‐Applikation
 Hosting des Projektes
 
 ### Verwendung
-User können Accounts erstellen und sich anmelden.
+Userinnen können Accounts erstellen und sich anmelden.
 User können sich ausloggen.
-User können ihre Daten ändern.
+Userinnen können ihre Daten ändern.
 User können ihre Daten sehen.
-User können Quizzes versuchen.
+Userinnen können Quizzes versuchen.
 User können Quizzes sehen.
-User können Bewertungen erhalten.
+Userinnen können Bewertungen erhalten.
 User können Bewertungen herunterladen.
 
-Admin können Fragen erstellen.
+Admina können Fragen erstellen.
 Admin können Fragen löschen.
-Admin können Fragen bearbeiten.
-Admin können Fragen exportieren.
+Admina können Fragen bearbeiten.
+Admina können Fragen exportieren.
 Admin können Quizzes erstellen.
-Admin können Quizzes bearbeiten.
+Admina können Quizzes bearbeiten.
 Admin können Quizzes löschen.
-Admin können Kategorien erstellen.
+Admina können Kategorien erstellen.
 Admin können Kategorien bearbeiten.
-Admin können Kategorien löschen.
+Admina können Kategorien löschen.
 Admin können User erstellen.
-Admin können User bearbeiten.
+Admina können User bearbeiten.
 Admin können User zu Admin machen.
 
 ### Aufbau Datenbank
