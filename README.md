@@ -46,6 +46,7 @@ Admin können User zu Admin machen.
 
 ### Aufbau Datenbank
 
+
 ### Bisheriger Zeitaufwand nach KW
 KW24: 12h
 KW25: 17h
@@ -53,10 +54,9 @@ KW26: 16h
 KW27: 24h
 KW28: 26h
 KW29: 23h
-KW30: 15h
+KW30: 17h
 
 ## Noch offen
-Mailing Programm richtigstellen
 Doppeltes CSS entfernen
 Unit Tests (phpunit), Integration Tests (phpunit)
 Export im richtigen Format (JSON, XML, CSV)

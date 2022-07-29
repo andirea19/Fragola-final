@@ -16,12 +16,10 @@ class ForgotPasswordController extends Controller
     | includes a trait which assists in sending these notifications from
     | your application to your users. Feel free to explore this trait.
 
-    Funktionsiert nicht in der lokalen Umgebung.
+    Funktioniert nicht in der lokalen Umgebung.
     Versuch, Symfony mailer zu verwenden.
     */
-    */
-    |
-    */
+  
 
     use SendsPasswordResetEmails;
 }
