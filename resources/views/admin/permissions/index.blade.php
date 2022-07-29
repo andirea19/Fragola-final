@@ -10,7 +10,7 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                    {{ __('Permission') }}
+                    {{ __('Freigabe') }}
                 </h6>
                 <div class="ml-auto">
                     @can('permission_create')
@@ -18,7 +18,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New permission') }}</span>
+                        <span class="text">{{ __('Neue Freigabe') }}</span>
                     </a>
                     @endcan
                 </div>
@@ -49,7 +49,7 @@
                                         <a href="{{ route('admin.permissions.edit', $permission->id) }}" class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
-                                        <form onclick="return confirm('are you sure ? ')" class="d-inline" action="{{ route('admin.permissions.destroy', $permission->id) }}" method="POST">
+                                        <form onclick="return confirm('Wirklich abschicken? ')" class="d-inline" action="{{ route('admin.permissions.destroy', $permission->id) }}" method="POST">
                                             @csrf
                                             @method('delete')
                                             <button class="btn btn-danger" style="border-top-left-radius: 0;border-bottom-left-radius: 0;">
@@ -61,7 +61,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td colspan="7" class="text-center">{{ __('Data Empty') }}</td>
+                                <td colspan="7" class="text-center">{{ __('Data Leer') }}</td>
                             </tr>
                             @endforelse
                         </tbody>
@@ -73,6 +73,10 @@
 
 </div>
 @endsection
+
+<!-- @section('scripts')
+Dieses Push Script ist für die Daten und die Datenbank zuständig.
+Es gibt eine Warnung vor dem Löschen --->
 
 @push('script-alt')
 <script>

@@ -10,14 +10,14 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                    {{ __('question') }}
+                    {{ __('Fragen') }}
                 </h6>
                 <div class="ml-auto">
                     <a href="{{ route('admin.questions.create') }}" class="btn btn-primary">
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New question') }}</span>
+                        <span class="text">{{ __('Neue Fragen') }}</span>
                     </a>
                 </div>
             </div>
@@ -29,9 +29,9 @@
                                 <th width="10">
 
                                 </th>
-                                <th>No</th>
-                                <th>Category</th>
-                                <th>Question Text</th>
+                                <th>Keine</th>
+                                <th>Kategorie</th>
+                                <th>Frage</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -61,7 +61,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td colspan="7" class="text-center">{{ __('Data Empty') }}</td>
+                                <td colspan="7" class="text-center">{{ __('Daten Leer') }}</td>
                             </tr>
                             @endforelse
                         </tbody>
@@ -73,6 +73,8 @@
 
 </div>
 @endsection
+
+<!-- Mit Push & Ajax wird die Datenbank aktualisiert -->
 
 @push('script-alt')
 <script>

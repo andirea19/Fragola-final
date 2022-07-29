@@ -33,7 +33,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="option_text">{{ __('option text') }}</label>
+                        <label for="option_text">{{ __('Bewertung') }}</label>
                         <input type="text" class="form-control" id="option_text" placeholder="{{ __('option text') }}" name="option_text" value="{{ old('option_text') }}" />
                     </div>
                     <div class="form-group">

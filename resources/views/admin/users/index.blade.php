@@ -7,7 +7,7 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                {{ __('Users') }}
+                {{ __('User') }}
                 </h6>
                 <div class="ml-auto">
                     @can('user_create')
@@ -15,7 +15,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New user') }}</span>
+                        <span class="text">{{ __('Neue User') }}</span>
                     </a>
                     @endcan
                 </div>
@@ -31,7 +31,7 @@
                                 <th>No</th>
                                 <th>{{ __('Name') }}</th>
                                 <th>{{ __('Email') }}</th>
-                                <th>{{ __('Roles') }}</th>
+                                <th>{{ __('Rolle') }}</th>
                                 <th>{{ __('Action') }}</th>
                             </tr>
                         </thead>
@@ -64,7 +64,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td colspan="7" class="text-center">{{ __('Data Empty') }}</td>
+                                <td colspan="7" class="text-center">{{ __('Leer') }}</td>
                             </tr>
                             @endforelse
                         </tbody>
@@ -77,7 +77,9 @@
 </div>
 @endsection
 
-
+<!-- Modal 
+Delete löscht aus den Usern
+-->
 @push('script-alt')
 <script>
     $(function () {
@@ -92,10 +94,10 @@
           return $(entry).data('entry-id')
       });
       if (ids.length === 0) {
-        alert('zero selected')
+        alert('Nichts ausgewählt')
         return
       }
-      if (confirm('are you sure ?')) {
+      if (confirm('Wollen Sie fortfahren?')) {
         $.ajax({
           headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
           method: 'POST',

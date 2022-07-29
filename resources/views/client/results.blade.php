@@ -12,7 +12,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Text</th>
+                                <th>Ergebnisse: </th>
                                 <th>Punkte</th>
                             </tr>
                         </thead>

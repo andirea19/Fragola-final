@@ -10,14 +10,14 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                    {{ __('result') }}
+                    {{ __('Ergebnis') }}
                 </h6>
                 <div class="ml-auto">
                     <a href="{{ route('admin.results.create') }}" class="btn btn-primary">
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New result') }}</span>
+                        <span class="text">{{ __('Neues Ergebnis') }}</span>
                     </a>
                 </div>
             </div>
@@ -31,8 +31,8 @@
                                 </th>
                                 <th>No</th>
                                 <th>User</th>
-                                <th>Points</th>
-                                <th>Questions</th>
+                                <th>Punkte</th>
+                                <th>Fragen</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -58,7 +58,7 @@
                                         <a href="{{ route('admin.results.edit', $result->id) }}" class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
-                                        <form onclick="return confirm('are you sure ? ')" class="d-inline" action="{{ route('admin.results.destroy', $result->id) }}" method="POST">
+                                        <form onclick="return confirm('Wirklich abbrechen? ')" class="d-inline" action="{{ route('admin.results.destroy', $result->id) }}" method="POST">
                                             @csrf
                                             @method('delete')
                                             <button class="btn btn-danger" style="border-top-left-radius: 0;border-bottom-left-radius: 0;">
@@ -70,7 +70,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td colspan="7" class="text-center">{{ __('Data Empty') }}</td>
+                                <td colspan="7" class="text-center">{{ __('Leer') }}</td>
                             </tr>
                             @endforelse
                         </tbody>
