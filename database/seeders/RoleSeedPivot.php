@@ -24,6 +24,8 @@ class RoleSeedPivot extends Seeder
 
         ];
 
+//Verbindung zwischen Rolle und Permission aufbauen - mit foreach-Schleife werden die Permissions zu den Rollen hinzugefügt        
+
         foreach ($permissions as $id => $permission) {
             $role = Role::find($id);
 

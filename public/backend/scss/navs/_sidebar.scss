@@ -27,13 +27,13 @@
             }
         }
 
-        // Accordion
+        // Accordion Menu
         .collapse {
             position: absolute;
             left: calc(#{$sidebar-collapsed-width} + #{$grid-gutter-width} / 2);
             z-index: 1;
             top: 2px;
-            // Grow In Animation
+            // Grow In Animation (passend?)
             @extend .animated--grow-in;
 
             .collapse-inner {
@@ -54,6 +54,8 @@
                 min-width: 10rem;
                 font-size: $dropdown-font-size;
                 margin: 0 0 1rem 0;
+
+// Language: scss bezogen auf den header 
 
                 .collapse-header {
                     margin: 0;
@@ -129,6 +131,8 @@
         }
     }
 
+// sidebar card für die app
+
     .sidebar-brand {
         height: $topbar-base-height;
         text-decoration: none;
@@ -186,6 +190,8 @@
         }
     }
 }
+
+//Umgang mit Medien
 
 @include media-breakpoint-up(md) {
     .sidebar {
@@ -274,7 +280,7 @@
 
             .nav-item {
 
-                // Accordion
+            
                 .collapse {
                     position: absolute;
                     left: calc(#{$sidebar-collapsed-width} + #{$grid-gutter-width} / 2);
@@ -343,6 +349,7 @@
 }
 
 // Sidebar Color Variants
+// NOCH NICHT VERWENDBAR!
 
 // Sidebar Light
 .sidebar-light {
@@ -393,7 +400,7 @@
         }
     }
 
-    // Color the sidebar toggler
+    //  Sidebar toggler button 
     #sidebarToggle {
         background-color: $gray-200;
 
@@ -407,7 +414,7 @@
     }
 }
 
-// Sidebar Dark
+// Sidebar Dunkel - NOCH NICHT VERWENDBAR!
 .sidebar-dark {
     .sidebar-brand {
         color: $white;

@@ -9,6 +9,7 @@
 }
 
 // Grayscale Background Utilities
+// -------------------------
 
 @each $level, $value in $grays {
   .bg-gray-#{$level} {

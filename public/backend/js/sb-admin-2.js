@@ -15,6 +15,7 @@
     };
     
     // Toggle the side navigation when window is resized below 480px
+    // Flexbox workaround for IE10/11 fehlt hier noch
     if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
       $("body").addClass("sidebar-toggled");
       $(".sidebar").addClass("toggled");
@@ -33,6 +34,7 @@
   });
 
   // Scroll to top button appear
+  //Fadein/Fadeout passend?
   $(document).on('scroll', function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
@@ -43,6 +45,7 @@
   });
 
   // Smooth scrolling using jQuery easing
+  // jQuery ist hier notwendig, weil die Funktionen in der Datei nicht verfügbar sind
   $(document).on('click', 'a.scroll-to-top', function(e) {
     var $anchor = $(this);
     $('html, body').stop().animate({

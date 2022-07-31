@@ -4,6 +4,7 @@
 .topbar {
   .nav-item {
     // Customize Dropdown Arrows for Navbar
+    // Center navbar items
     &.dropdown {
       .dropdown-toggle {
         &::after {
@@ -23,7 +24,7 @@
         }
       }
     }
-    // Counter for nav links and nav link image sizing
+    // Links und Input Fields in Navbar
     .nav-link {
       position: relative;
       .badge-counter {

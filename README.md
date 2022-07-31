@@ -1,5 +1,8 @@
 # Laravel - Quiz App _Fragola_
-Andrea Ungerer - noch unzufrieden damit
+Andrea Ungerer
+
+[]: # Language: markdown
+[]: # Path: README.md
 
 ## Mindestanforderungen:
 Projektdokumentation  
@@ -45,7 +48,15 @@ Admina können User bearbeiten.
 Admin können User zu Admin machen.
 
 ### Aufbau Datenbank
-
+User
+Fragen
+Punkte/Optionen
+Password
+Failed
+Access
+Permission
+Rollen
+Ergebnisse
 
 ### Bisheriger Zeitaufwand nach KW
 KW24: 12h
@@ -53,8 +64,8 @@ KW25: 17h
 KW26: 16h
 KW27: 24h
 KW28: 26h
-KW29: 23h
-KW30: 17h
+KW29: 24h
+KW30: 21h
 
 ## Noch offen
 Doppeltes CSS entfernen

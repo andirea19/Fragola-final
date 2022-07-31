@@ -22,6 +22,8 @@ class UserSeedPivot extends Seeder
 
         ];
 
+// User Seed - Erstellt einen neuen User, Pivot zu Rolle
+
         foreach ($roles as $id => $role) {
             $user = User::find($id);
 
