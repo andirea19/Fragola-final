@@ -62,7 +62,7 @@ class CategoryController extends Controller
         $category->update($request->validated());
 
         return redirect()->route('admin.categories.index')->with([
-            'message' => 'successfully updated !',
+            'message' => 'Erfolgreich geändert!',
             'alert-type' => 'info'
         ]);
     }
@@ -73,7 +73,7 @@ class CategoryController extends Controller
 
 
         return back()->with([
-            'message' => 'successfully deleted !',
+            'message' => 'Erfolgreich gelöscht!',
             'alert-type' => 'danger'
         ]);
     }

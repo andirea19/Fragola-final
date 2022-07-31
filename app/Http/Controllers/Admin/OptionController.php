@@ -39,7 +39,7 @@ class OptionController extends Controller
         Option::create($request->validated());
 
         return redirect()->route('admin.options.index')->with([
-            'message' => 'successfully created !',
+            'message' => 'Erfolreiche erstellt!',
             'alert-type' => 'success'
         ]);
     }
@@ -61,7 +61,7 @@ class OptionController extends Controller
         $option->update($request->validated());
 
         return redirect()->route('admin.options.index')->with([
-            'message' => 'successfully updated !',
+            'message' => 'Erfolgreich geändert!',
             'alert-type' => 'info'
         ]);
     }
@@ -71,7 +71,7 @@ class OptionController extends Controller
         $option->delete();
 
         return back()->with([
-            'message' => 'successfully deleted !',
+            'message' => 'Erfolgreich gelöscht!',
             'alert-type' => 'danger'
         ]);
     }
