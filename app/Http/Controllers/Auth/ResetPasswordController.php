@@ -19,10 +19,12 @@ class ResetPasswordController extends Controller
     |
     */
 
+    //Wohin wird weitergeleitet nachdem das Passwort zurückgesetzt wurde?
+
     use ResetsPasswords;
 
     /**
-     * Where to redirect users after resetting their password.
+     * 
      *
      * @var string
      */

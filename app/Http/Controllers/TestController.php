@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTestRequest;
 
+//Erstellt einen Test in zufälliger Weise
+
 class TestController extends Controller
 {
     public function index()
@@ -24,6 +26,8 @@ class TestController extends Controller
         return view('client.test', compact('categories'));
     }
 
+//   Erstellt einen Test mit den angegebenen Daten
+
     public function store(StoreTestRequest $request)
     {
         $options = Option::find(array_values($request->input('questions')));
@@ -31,6 +35,8 @@ class TestController extends Controller
         $result = auth()->user()->userResults()->create([
             'total_points' => $options->sum('points')
         ]);
+
+// Erstellt ein neues Result mit der Summe aller Punkte
 
         $questions = $options->mapWithKeys(function ($option) {
             return [$option->question_id => [

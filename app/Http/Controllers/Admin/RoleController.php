@@ -51,7 +51,7 @@ class RoleController extends Controller
         $role->permissions()->sync($request->input('permissions'));
 
         return redirect()->route('admin.roles.index')->with([
-            'message' => 'successfully created !',
+            'message' => 'Erfolgreich erstellt!',
             'alert-type' => 'success'
         ]);  
     }
@@ -82,7 +82,7 @@ class RoleController extends Controller
         $role->permissions()->sync($request->input('permissions'));
 
         return redirect()->route('admin.roles.index')->with([
-            'message' => 'successfully updated !',
+            'message' => 'Erfolgreich verändert!',
             'alert-type' => 'info'
         ]);
     }
@@ -98,7 +98,7 @@ class RoleController extends Controller
         $role->delete();
 
         return redirect()->route('admin.roles.index')->with([
-            'message' => 'successfully deleted !',
+            'message' => 'Erfolgreich verändert!',
             'alert-type' => 'danger'
         ]);
     }

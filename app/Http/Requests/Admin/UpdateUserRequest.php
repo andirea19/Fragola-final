@@ -16,7 +16,7 @@ class UpdateUserRequest extends FormRequest
         return true;
     }
 
-    /**
+    /** Für die Formulare und Validierung
      * Get the validation rules that apply to the request.
      *
      * @return array

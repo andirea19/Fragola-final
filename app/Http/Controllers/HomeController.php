@@ -14,10 +14,11 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+
     }
 
     /**
-     * Show the application dashboard.
+     * Dashboard Ansicht zeigen.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */

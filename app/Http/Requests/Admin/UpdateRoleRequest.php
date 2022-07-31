@@ -16,7 +16,7 @@ class UpdateRoleRequest extends FormRequest
         return true;
     }
 
-    /**
+    /** Die Validierungsregeln für das Formular Rolle
      * Get the validation rules that apply to the request.
      *
      * @return array

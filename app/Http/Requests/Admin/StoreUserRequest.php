@@ -16,7 +16,7 @@ class StoreUserRequest extends FormRequest
         return true;
     }
 
-    /**
+    /** Speicherung der Userdaten
      * Get the validation rules that apply to the request.
      *
      * @return array

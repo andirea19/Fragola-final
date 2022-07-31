@@ -6,8 +6,8 @@ use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 
 class TrimStrings extends Middleware
 {
-    /**
-     * The names of the attributes that should not be trimmed.
+    /** Was nicht getrimmt werden soll.
+     * Das Passwort wird nicht getrimmt 
      *
      * @var array<int, string>
      */

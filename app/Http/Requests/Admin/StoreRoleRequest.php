@@ -6,7 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class StoreRoleRequest extends FormRequest
 {
-    /**
+    /** Nur zugelassene User können die Rolle erstellen
      * Determine if the user is authorized to make this request.
      *
      * @return bool

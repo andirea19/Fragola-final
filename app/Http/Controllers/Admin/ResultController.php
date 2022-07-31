@@ -39,7 +39,7 @@ class ResultController extends Controller
         $result->questions()->sync($request->input('questions', []));
 
         return redirect()->route('admin.results.index')->with([
-            'message' => 'successfully created !',
+            'message' => 'Erfolgreich erstellt!',
             'alert-type' => 'success'
         ]);
     }
@@ -62,7 +62,7 @@ class ResultController extends Controller
         $result->questions()->sync($request->input('questions', []));
 
         return redirect()->route('admin.results.index')->with([
-            'message' => 'successfully updated !',
+            'message' => 'Erfolreich verändert!',
             'alert-type' => 'info'
         ]);
     }
@@ -74,7 +74,7 @@ class ResultController extends Controller
         $result->delete();
 
         return back()->with([
-            'message' => 'successfully deleted !',
+            'message' => 'Erfolgreich gelöscht!',
             'alert-type' => 'danger'
         ]);
     }
