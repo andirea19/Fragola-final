@@ -1,4 +1,5 @@
 /*! DataTables 1.10.24
+ * Ein Tool zu Verwendung von jqUERY
  * ©2008-2021 SpryMedia Ltd - datatables.net/license
  */
 
@@ -43,7 +44,7 @@
 			}
 
 			if ( ! $ ) {
-				$ = typeof window !== 'undefined' ? // jQuery's factory checks for a global window
+				$ = typeof window !== 'undefined' ? // jQuery's factory prüft größe
 					require('jquery') :
 					require('jquery')( root );
 			}
@@ -52,14 +53,15 @@
 		};
 	}
 	else {
-		// Browser
+		// im Browser oder Fenster
 		factory( jQuery, window, document );
 	}
 }
 (function( $, window, document, undefined ) {
 	"use strict";
 
-	/**
+	/**Ich verwende hier DataTables, weil es die Arbeit mit jQuery einfacher macht.
+	 * 
 	 * DataTables is a plug-in for the jQuery Javascript library. It is a highly
 	 * flexible tool, based upon the foundations of progressive enhancement,
 	 * which will add advanced interaction controls to any HTML table. For a
@@ -93,7 +95,8 @@
 	 */
 	var DataTable = function ( options )
 	{
-		/**
+		/** Mit jQuery werden die Datatables aufgegriffen und verarbeitet
+		 * 
 		 * Perform a jQuery selector action on the table's TR elements (from the tbody) and
 		 * return the resulting jQuery object.
 		 *  @param {string|node|jQuery} sSelector jQuery selector or node collection to act on
@@ -135,7 +138,8 @@
 		};
 		
 		
-		/**
+		/** Datatables werden hier erstellt.
+		 * 
 		 * Almost identical to $ in operation, but in this case returns the data for the matched
 		 * rows - as such, the jQuery selector used should match TR row nodes or TD/TH cell nodes
 		 * rather than any descendants, so the data can be obtained for the row/cell. If matching
@@ -209,6 +213,8 @@
 		
 		
 		/**
+		 * Um nur eine Zeile zu selektieren und zu verarbeiten.
+		 * 
 		 * Add a single new row or multiple rows of data to the table. Please note
 		 * that this is suitable for client-side processing only - if you are using
 		 * server-side processing (i.e. "bServerSide": true), then to add data, you
@@ -268,6 +274,9 @@
 		 * contained in the table and the sizes applied to the columns (in the DOM, CSS or
 		 * through the sWidth parameter). This can be useful when the width of the table's
 		 * parent element changes (for example a window resize).
+		 * 
+		 * Aufrufen, bevor DataTables verwendet wird.
+		 * 
 		 *  @param {boolean} [bRedraw=true] Redraw the table or not, you will typically want to
 		 *  @dtopt API
 		 *  @deprecated Since v1.10
@@ -355,7 +364,7 @@
 		
 		
 		/**
-		 * Remove a row for the table
+		 * Aus der Tabelle entfernen
 		 *  @param {mixed} target The index of the row from aoData to be deleted, or
 		 *    the TR element you want to delete
 		 *  @param {function|null} [callBack] Callback function

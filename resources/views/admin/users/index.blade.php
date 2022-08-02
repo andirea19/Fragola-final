@@ -52,7 +52,7 @@
                                         <a href="{{ route('admin.users.edit', $user->id) }}" class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
-                                        <form onclick="return confirm('are you sure ? ')"  class="d-inline" action="{{ route('admin.users.destroy', $user->id) }}" method="POST">
+                                        <form onclick="return confirm('Sind Sie sicher? ')"  class="d-inline" action="{{ route('admin.users.destroy', $user->id) }}" method="POST">
                                             @csrf
                                             @method('delete')
                                             <button class="btn btn-danger" style="border-top-left-radius: 0;border-bottom-left-radius: 0;">

@@ -38,7 +38,7 @@ class QuestionController extends Controller
         Question::create($request->validated());
 
         return redirect()->route('admin.questions.index')->with([
-            'message' => 'successfully created !',
+            'message' => 'Erfolgreich erstellt!!',
             'alert-type' => 'success'
         ]);
     }
@@ -70,7 +70,7 @@ class QuestionController extends Controller
         $question->delete();
 
         return back()->with([
-            'message' => 'successfully deleted !',
+            'message' => 'Gelöscht!',
             'alert-type' => 'danger'
         ]);
     }

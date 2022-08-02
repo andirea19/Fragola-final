@@ -35,7 +35,7 @@ class CategoryController extends Controller
         Category::create($request->validated());
 
         return redirect()->route('admin.categories.index')->with([
-            'message' => 'successfully created !',
+            'message' => 'Erfolgreich erstellt!',
             'alert-type' => 'success'
         ]);
     }
@@ -92,7 +92,7 @@ public function show(Category $category): View
         Category::truncate();
 
         return back()->with([
-            'message' => 'successfully deleted all !',
+            'message' => 'erfolgreich gelöscht!',
             'alert-type' => 'danger'
         ]);
     }

@@ -100,7 +100,7 @@
         alert('zero selected')
         return
       }
-      if (confirm('are you sure ?')) {
+      if (confirm('Sind Sie sicher?')) {
         $.ajax({
           headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
           method: 'POST',

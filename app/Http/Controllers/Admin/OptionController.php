@@ -39,7 +39,7 @@ class OptionController extends Controller
         Option::create($request->validated());
 
         return redirect()->route('admin.options.index')->with([
-            'message' => 'Erfolreiche erstellt!',
+            'message' => 'Erfolreich erstellt!',
             'alert-type' => 'success'
         ]);
     }

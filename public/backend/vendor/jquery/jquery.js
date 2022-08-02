@@ -9,6 +9,8 @@
  * Released under the MIT license
  * https://jquery.org/license
  *
+ * Siehe Datatable - zur Verarebitung der Info
+ * 
  * Date: 2021-03-02T17:08Z
  */
 ( function( global, factory ) {
