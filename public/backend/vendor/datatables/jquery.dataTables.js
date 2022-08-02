@@ -1,5 +1,6 @@
 /*! DataTables 1.10.24
  * Ein Tool zu Verwendung von jqUERY
+ * Zahlreiche Funktionen sind aufgeführt, werden aber nicht verwendet
  * ©2008-2021 SpryMedia Ltd - datatables.net/license
  */
 
