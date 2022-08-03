@@ -67,6 +67,7 @@ KW27: 24h
 KW28: 26h
 KW29: 24h
 KW30: 21h
+KW31: 4h
 
 ## Noch offen
 Doppeltes CSS entfernen
