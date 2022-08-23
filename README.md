@@ -1,6 +1,7 @@
-# Laravel - Quiz App _Fragola_
+# Laravel - Quiz _Fragola_
 
 Andrea Ungerer
+Wifi Kurs Webentwicklung 2022
 
 []: # Language: markdown
 []: # Path: README.md
