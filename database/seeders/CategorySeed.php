@@ -15,7 +15,7 @@ class CategorySeed extends Seeder
      * @return void
      */
 
-    *
+    /*
      * @return void
      */
     public function run()
