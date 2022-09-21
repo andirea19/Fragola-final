@@ -3,7 +3,6 @@
 Andrea Ungerer
 Wifi Kurs Webentwicklung 2022
 
-[]: # Language: markdown
 []: # Path: README.md
 
 ## Mindestanforderungen:
@@ -68,7 +67,7 @@ KW27: 24h
 KW28: 26h
 KW29: 24h
 KW30: 21h
-KW31: 4h
+KW31: 14h
 
 ## Noch offen
 Doppeltes CSS entfernen
