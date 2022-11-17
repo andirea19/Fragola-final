@@ -3,7 +3,7 @@
 Andrea Ungerer
 Wifi Kurs Webentwicklung 2022
 
-[]: # Path: README.md
+# Path: README.md
 
 ## Mindestanforderungen:
 Projektdokumentation  
@@ -34,7 +34,7 @@ User können Quizzes sehen.
 Userinnen können Bewertungen erhalten.
 User können Bewertungen herunterladen.
 
-Admina können Fragen erstellen.
+### Admina können Fragen erstellen.
 Admin können Fragen löschen.
 Admina können Fragen bearbeiten.
 Admina können Fragen exportieren.
@@ -73,7 +73,6 @@ KW31: 14h
 Doppeltes CSS entfernen
 Unit Tests (phpunit), Integration Tests (phpunit)
 Export im richtigen Format (JSON, XML, CSV)
-API für die Arbeit mit Moodle
 Anleitung für die Verwendung
 
 ## Login
