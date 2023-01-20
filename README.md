@@ -1,4 +1,4 @@
-# Laravel - Quiz _Fragola_
+# Laravel - Quizapp _Fragola_
 
 Andrea Ungerer
 Wifi Kurs Webentwicklung 2022
